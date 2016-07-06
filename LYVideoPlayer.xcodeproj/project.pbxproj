@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAD4CEBA1D2D093E009F07BF /* TransPortProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4CEB91D2D093E009F07BF /* TransPortProtocol.swift */; };
+		BAE452571D2CA28D0055AE8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452561D2CA28D0055AE8D /* AppDelegate.swift */; };
+		BAE452591D2CA28D0055AE8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452581D2CA28D0055AE8D /* ViewController.swift */; };
+		BAE4525C1D2CA28D0055AE8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE4525A1D2CA28D0055AE8D /* Main.storyboard */; };
+		BAE4525E1D2CA28D0055AE8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAE4525D1D2CA28D0055AE8D /* Assets.xcassets */; };
+		BAE452611D2CA28D0055AE8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAE4525F1D2CA28D0055AE8D /* LaunchScreen.storyboard */; };
+		BAE4526C1D2CA28E0055AE8D /* LYVideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE4526B1D2CA28E0055AE8D /* LYVideoPlayerTests.swift */; };
+		BAE452771D2CA28E0055AE8D /* LYVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452761D2CA28E0055AE8D /* LYVideoPlayerUITests.swift */; };
+		BAE452851D2CA5C80055AE8D /* LYVideoPlayerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */; };
+		BAE452871D2CB4450055AE8D /* LYVideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAE452681D2CA28E0055AE8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE4524B1D2CA28D0055AE8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE452521D2CA28D0055AE8D;
+			remoteInfo = LYVideoPlayer;
+		};
+		BAE452731D2CA28E0055AE8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE4524B1D2CA28D0055AE8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE452521D2CA28D0055AE8D;
+			remoteInfo = LYVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAD4CEB91D2D093E009F07BF /* TransPortProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransPortProtocol.swift; sourceTree = "<group>"; };
+		BAE452531D2CA28D0055AE8D /* LYVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE452561D2CA28D0055AE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BAE452581D2CA28D0055AE8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BAE4525B1D2CA28D0055AE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAE4525D1D2CA28D0055AE8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAE452601D2CA28D0055AE8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAE452621D2CA28D0055AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE452671D2CA28E0055AE8D /* LYVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE4526B1D2CA28E0055AE8D /* LYVideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYVideoPlayerTests.swift; sourceTree = "<group>"; };
+		BAE4526D1D2CA28E0055AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE452721D2CA28E0055AE8D /* LYVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE452761D2CA28E0055AE8D /* LYVideoPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYVideoPlayerUITests.swift; sourceTree = "<group>"; };
+		BAE452781D2CA28E0055AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYVideoPlayerControl.swift; sourceTree = "<group>"; };
+		BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYVideoPlayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAE452501D2CA28D0055AE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452641D2CA28E0055AE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE4526F1D2CA28E0055AE8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAE4524A1D2CA28D0055AE8D = {
+			isa = PBXGroup;
+			children = (
+				BAE452551D2CA28D0055AE8D /* LYVideoPlayer */,
+				BAE4526A1D2CA28E0055AE8D /* LYVideoPlayerTests */,
+				BAE452751D2CA28E0055AE8D /* LYVideoPlayerUITests */,
+				BAE452541D2CA28D0055AE8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAE452541D2CA28D0055AE8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAE452531D2CA28D0055AE8D /* LYVideoPlayer.app */,
+				BAE452671D2CA28E0055AE8D /* LYVideoPlayerTests.xctest */,
+				BAE452721D2CA28E0055AE8D /* LYVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAE452551D2CA28D0055AE8D /* LYVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				BAE452561D2CA28D0055AE8D /* AppDelegate.swift */,
+				BAE452581D2CA28D0055AE8D /* ViewController.swift */,
+				BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */,
+				BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */,
+				BAD4CEB91D2D093E009F07BF /* TransPortProtocol.swift */,
+				BAE4525A1D2CA28D0055AE8D /* Main.storyboard */,
+				BAE4525D1D2CA28D0055AE8D /* Assets.xcassets */,
+				BAE4525F1D2CA28D0055AE8D /* LaunchScreen.storyboard */,
+				BAE452621D2CA28D0055AE8D /* Info.plist */,
+			);
+			path = LYVideoPlayer;
+			sourceTree = "<group>";
+		};
+		BAE4526A1D2CA28E0055AE8D /* LYVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAE4526B1D2CA28E0055AE8D /* LYVideoPlayerTests.swift */,
+				BAE4526D1D2CA28E0055AE8D /* Info.plist */,
+			);
+			path = LYVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		BAE452751D2CA28E0055AE8D /* LYVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAE452761D2CA28E0055AE8D /* LYVideoPlayerUITests.swift */,
+				BAE452781D2CA28E0055AE8D /* Info.plist */,
+			);
+			path = LYVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAE452521D2CA28D0055AE8D /* LYVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE4527B1D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayer" */;
+			buildPhases = (
+				BAE4524F1D2CA28D0055AE8D /* Sources */,
+				BAE452501D2CA28D0055AE8D /* Frameworks */,
+				BAE452511D2CA28D0055AE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYVideoPlayer;
+			productName = LYVideoPlayer;
+			productReference = BAE452531D2CA28D0055AE8D /* LYVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAE452661D2CA28E0055AE8D /* LYVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE4527E1D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayerTests" */;
+			buildPhases = (
+				BAE452631D2CA28E0055AE8D /* Sources */,
+				BAE452641D2CA28E0055AE8D /* Frameworks */,
+				BAE452651D2CA28E0055AE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE452691D2CA28E0055AE8D /* PBXTargetDependency */,
+			);
+			name = LYVideoPlayerTests;
+			productName = LYVideoPlayerTests;
+			productReference = BAE452671D2CA28E0055AE8D /* LYVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAE452711D2CA28E0055AE8D /* LYVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE452811D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayerUITests" */;
+			buildPhases = (
+				BAE4526E1D2CA28E0055AE8D /* Sources */,
+				BAE4526F1D2CA28E0055AE8D /* Frameworks */,
+				BAE452701D2CA28E0055AE8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAE452741D2CA28E0055AE8D /* PBXTargetDependency */,
+			);
+			name = LYVideoPlayerUITests;
+			productName = LYVideoPlayerUITests;
+			productReference = BAE452721D2CA28E0055AE8D /* LYVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAE4524B1D2CA28D0055AE8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "李言";
+				TargetAttributes = {
+					BAE452521D2CA28D0055AE8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+					};
+					BAE452661D2CA28E0055AE8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+						TestTargetID = BAE452521D2CA28D0055AE8D;
+					};
+					BAE452711D2CA28E0055AE8D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = U4BHWUFC96;
+						TestTargetID = BAE452521D2CA28D0055AE8D;
+					};
+				};
+			};
+			buildConfigurationList = BAE4524E1D2CA28D0055AE8D /* Build configuration list for PBXProject "LYVideoPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAE4524A1D2CA28D0055AE8D;
+			productRefGroup = BAE452541D2CA28D0055AE8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAE452521D2CA28D0055AE8D /* LYVideoPlayer */,
+				BAE452661D2CA28E0055AE8D /* LYVideoPlayerTests */,
+				BAE452711D2CA28E0055AE8D /* LYVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAE452511D2CA28D0055AE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE452611D2CA28D0055AE8D /* LaunchScreen.storyboard in Resources */,
+				BAE4525E1D2CA28D0055AE8D /* Assets.xcassets in Resources */,
+				BAE4525C1D2CA28D0055AE8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452651D2CA28E0055AE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452701D2CA28E0055AE8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAE4524F1D2CA28D0055AE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE452591D2CA28D0055AE8D /* ViewController.swift in Sources */,
+				BAE452871D2CB4450055AE8D /* LYVideoPlayView.swift in Sources */,
+				BAE452851D2CA5C80055AE8D /* LYVideoPlayerControl.swift in Sources */,
+				BAE452571D2CA28D0055AE8D /* AppDelegate.swift in Sources */,
+				BAD4CEBA1D2D093E009F07BF /* TransPortProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE452631D2CA28E0055AE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE4526C1D2CA28E0055AE8D /* LYVideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE4526E1D2CA28E0055AE8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAE452771D2CA28E0055AE8D /* LYVideoPlayerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAE452691D2CA28E0055AE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE452521D2CA28D0055AE8D /* LYVideoPlayer */;
+			targetProxy = BAE452681D2CA28E0055AE8D /* PBXContainerItemProxy */;
+		};
+		BAE452741D2CA28E0055AE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE452521D2CA28D0055AE8D /* LYVideoPlayer */;
+			targetProxy = BAE452731D2CA28E0055AE8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAE4525A1D2CA28D0055AE8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAE4525B1D2CA28D0055AE8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAE4525F1D2CA28D0055AE8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAE452601D2CA28D0055AE8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAE452791D2CA28E0055AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAE4527A1D2CA28E0055AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAE4527C1D2CA28E0055AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAE4527D1D2CA28E0055AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAE4527F1D2CA28E0055AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LYVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYVideoPlayer.app/LYVideoPlayer";
+			};
+			name = Debug;
+		};
+		BAE452801D2CA28E0055AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LYVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYVideoPlayer.app/LYVideoPlayer";
+			};
+			name = Release;
+		};
+		BAE452821D2CA28E0055AE8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LYVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LYVideoPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BAE452831D2CA28E0055AE8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LYVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LYVideoPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAE4524E1D2CA28D0055AE8D /* Build configuration list for PBXProject "LYVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE452791D2CA28E0055AE8D /* Debug */,
+				BAE4527A1D2CA28E0055AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE4527B1D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE4527C1D2CA28E0055AE8D /* Debug */,
+				BAE4527D1D2CA28E0055AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE4527E1D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE4527F1D2CA28E0055AE8D /* Debug */,
+				BAE452801D2CA28E0055AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE452811D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE452821D2CA28E0055AE8D /* Debug */,
+				BAE452831D2CA28E0055AE8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAE4524B1D2CA28D0055AE8D /* Project object */;
+}
