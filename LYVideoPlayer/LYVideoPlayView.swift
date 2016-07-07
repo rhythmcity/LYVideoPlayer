@@ -11,19 +11,36 @@ import AVFoundation
 class LYVideoPlayView: UIView {
 
     
+    var overlayView:OverlayView = {
+        var view:OverlayView =  OverlayView.init(frame: CGRect.zero)
+        return view
+    }()
+    
+    
+    var  transport:TransPort {
+    
+       return self.overlayView
+    }
+    
      override class func layerClass() -> AnyClass {
     
-        return AVPlayer.self
+        return AVPlayerLayer.self
     
     }
     
+    
     init(play:AVPlayer) {
         super.init(frame: CGRect.zero)
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[videoPlayView]-|", options: .AlignAllLeft, metrics: nil, views: ["videoPlayView" : self]))
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[videoPlayView]-|", options: .AlignAllLeft, metrics: nil, views: ["videoPlayView" : self]))
-        
+        self.backgroundColor = UIColor.blackColor()
+        let layer:AVPlayerLayer  = self.layer as! AVPlayerLayer
+        layer.player = play
+    
+        self.addSubview(self.overlayView)
+        self.overlayView.snp_makeConstraints { (make) in
+            make.edges.equalTo(self)
+        }
+      
+
 
     }
 

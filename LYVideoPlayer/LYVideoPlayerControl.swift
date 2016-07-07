@@ -24,7 +24,7 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
     private var imageGenerator:AVAssetImageGenerator?
     private var videoPlayView:LYVideoPlayView?
     weak private var transport:TransPort?
-    private var PlayerItemStatusContext = 0
+    private var PlayerItemStatusContext = "PlayerItemStatusContext"
     
     
     init(url:NSURL) {
@@ -41,9 +41,7 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
         let control = LYVideoPlayerControl.init(url: assetURL)
         control.asset = AVAsset.init(URL: assetURL)
         control.prepareToPlay()
-        
         return control
-
     }
     
     private func prepareToPlay() {
@@ -52,13 +50,26 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
         
         self.playerItem = AVPlayerItem.init(asset: self.asset!, automaticallyLoadedAssetKeys: keys)
         
-        self.playerItem?.addObserver(self, forKeyPath: "status", options:.New , context: &PlayerItemStatusContext)
         
         self.player = AVPlayer.init(playerItem: self.playerItem!)
-        
+
         self.videoPlayView = LYVideoPlayView.init(play: self.player!)
 
         self.transport?.delegate = self
+        
+        self.player?.play()
+//        self.player?.addObserver(self, forKeyPath: "status", options:.New , context: &PlayerItemStatusContext)
+
+        self.addPlayerItemTimeOberser()
+        
+        self.addItemEndObserverForPlayItem()
+        
+        let  duration = self.playerItem?.duration
+        
+        self.transport?.setCurrentTime(CMTimeGetSeconds(kCMTimeZero), duration: CMTimeGetSeconds(duration!))
+        
+        self.player?.play()
+
     
     }
     
@@ -77,16 +88,7 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
                     return
                 }
                 
-                self.addPlayerItemTimeOberser()
                 
-                self.addItemEndObserverForPlayItem()
-                
-                let  duration = self.playerItem?.duration
-                
-                self.transport?.setCurrentTime(CMTimeGetSeconds(kCMTimeZero), duration: CMTimeGetSeconds(duration!))
-
-                self.player?.play()
-              
             })
         }
     }
@@ -95,55 +97,55 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
     func  addPlayerItemTimeOberser() -> Void {
         
         let interval = CMTimeMakeWithSeconds(0.5, Int32(NSEC_PER_SEC))
-        weak var weakSelf = self
+//        weak var weakSelf = self
         self.itemObserver = self.player?.addPeriodicTimeObserverForInterval(interval, queue: dispatch_get_main_queue(), usingBlock: { (time:CMTime) -> Void in
             let currentTime = CMTimeGetSeconds(time);
-            let duration = CMTimeGetSeconds(weakSelf!.playerItem!.duration);
-            weakSelf?.transport?.setCurrentTime(currentTime, duration: duration)
+            let duration = CMTimeGetSeconds(self.playerItem!.duration);
+            self.transport?.setCurrentTime(currentTime, duration: duration)
         })
     }
     
     func addItemEndObserverForPlayItem() -> Void {
 
-        weak var weakSelf = self
+//        weak var weakSelf = self
         self.itemEndObserver = NSNotificationCenter.defaultCenter().addObserverForName(AVPlayerItemDidPlayToEndTimeNotification, object: self.playerItem, queue: NSOperationQueue.mainQueue()) { (notification:NSNotification) -> Void in
-            weakSelf?.transport?.playbackComplete()
+            self.transport?.playbackComplete()
         }
     }
     
     
     func play() -> Void {
         self.player?.play()
-    
-    
     }
+    
     func pause() -> Void {
         self.lastPlaybackRate = self.player?.rate
         self.player?.pause()
-        
     }
+    
     func stop() -> Void {
         self.player?.rate = 0
         self.transport?.playbackComplete()
     }
+    
     func scrubbingDidStart() -> Void {
         self.lastPlaybackRate = self.player?.rate
         self.player?.pause()
         self.player?.removeTimeObserver(self.itemObserver!)
-        
     }
+    
     func scrubbingToTime(time:NSTimeInterval) ->Void {
         self.playerItem?.cancelPendingSeeks()
         self.player?.seekToTime(CMTimeMakeWithSeconds(time, Int32(NSEC_PER_SEC)), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-        
     }
+    
     func scrubbingDidEnd() -> Void {
         self.addPlayerItemTimeOberser()
         if self.lastPlaybackRate > 0.0 {
            self.player?.play()
         }
-        
     }
+    
     func jumpToTime(time:NSTimeInterval) ->Void {
         self.player!.seekToTime(CMTimeMakeWithSeconds(time, Int32(NSEC_PER_SEC)))
     
@@ -156,9 +158,9 @@ class LYVideoPlayerControl: NSObject,TransPortDelegate{
     deinit {
         if (self.itemEndObserver != nil) {
            NSNotificationCenter.defaultCenter().removeObserver(self, name: AVPlayerItemDidPlayToEndTimeNotification, object: self.playerItem)
+            self.itemEndObserver = nil
         }
         
-    
     }
     
 

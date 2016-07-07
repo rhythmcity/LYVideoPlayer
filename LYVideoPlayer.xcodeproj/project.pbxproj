@@ -17,6 +17,9 @@
 		BAE452771D2CA28E0055AE8D /* LYVideoPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452761D2CA28E0055AE8D /* LYVideoPlayerUITests.swift */; };
 		BAE452851D2CA5C80055AE8D /* LYVideoPlayerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */; };
 		BAE452871D2CB4450055AE8D /* LYVideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */; };
+		BAF13DCB1D2DFEDF009C4F85 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF13DCA1D2DFEDF009C4F85 /* OverlayView.swift */; };
+		BAF13DCD1D2E27D7009C4F85 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF13DCC1D2E27D7009C4F85 /* SnapKit.framework */; };
+		F7337EA4D475EE201D1CEAA8 /* Pods_LYVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DF4A0EF6192D269CD333E8 /* Pods_LYVideoPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66DF4A0EF6192D269CD333E8 /* Pods_LYVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LYVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CE242F3577335064CD1606 /* Pods-LYVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYVideoPlayer/Pods-LYVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		BAD4CEB91D2D093E009F07BF /* TransPortProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransPortProtocol.swift; sourceTree = "<group>"; };
 		BAE452531D2CA28D0055AE8D /* LYVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE452561D2CA28D0055AE8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +58,9 @@
 		BAE452781D2CA28E0055AE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYVideoPlayerControl.swift; sourceTree = "<group>"; };
 		BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LYVideoPlayView.swift; sourceTree = "<group>"; };
+		BAF13DCA1D2DFEDF009C4F85 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		BAF13DCC1D2E27D7009C4F85 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/LYVideoPlayer-feghnxaxmunhijduxxhbgfncvrxw/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		FC6E0BEF28C9B003454062F7 /* Pods-LYVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYVideoPlayer/Pods-LYVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF13DCD1D2E27D7009C4F85 /* SnapKit.framework in Frameworks */,
+				F7337EA4D475EE201D1CEAA8 /* Pods_LYVideoPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8812E811D0C2CE41FE9F3ED1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF13DCC1D2E27D7009C4F85 /* SnapKit.framework */,
+				66DF4A0EF6192D269CD333E8 /* Pods_LYVideoPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAE4524A1D2CA28D0055AE8D = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +106,8 @@
 				BAE4526A1D2CA28E0055AE8D /* LYVideoPlayerTests */,
 				BAE452751D2CA28E0055AE8D /* LYVideoPlayerUITests */,
 				BAE452541D2CA28D0055AE8D /* Products */,
+				D262AACE3406E7FCBF6E924D /* Pods */,
+				8812E811D0C2CE41FE9F3ED1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +129,7 @@
 				BAE452841D2CA5C80055AE8D /* LYVideoPlayerControl.swift */,
 				BAE452861D2CB4450055AE8D /* LYVideoPlayView.swift */,
 				BAD4CEB91D2D093E009F07BF /* TransPortProtocol.swift */,
+				BAF13DCA1D2DFEDF009C4F85 /* OverlayView.swift */,
 				BAE4525A1D2CA28D0055AE8D /* Main.storyboard */,
 				BAE4525D1D2CA28D0055AE8D /* Assets.xcassets */,
 				BAE4525F1D2CA28D0055AE8D /* LaunchScreen.storyboard */,
@@ -134,6 +156,15 @@
 			path = LYVideoPlayerUITests;
 			sourceTree = "<group>";
 		};
+		D262AACE3406E7FCBF6E924D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74CE242F3577335064CD1606 /* Pods-LYVideoPlayer.debug.xcconfig */,
+				FC6E0BEF28C9B003454062F7 /* Pods-LYVideoPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAE4527B1D2CA28E0055AE8D /* Build configuration list for PBXNativeTarget "LYVideoPlayer" */;
 			buildPhases = (
+				96E6C06D92C86C37D11528B0 /* [CP] Check Pods Manifest.lock */,
 				BAE4524F1D2CA28D0055AE8D /* Sources */,
 				BAE452501D2CA28D0055AE8D /* Frameworks */,
 				BAE452511D2CA28D0055AE8D /* Resources */,
+				68833C289ED4A234BDD11854 /* [CP] Embed Pods Frameworks */,
+				A3711424039E3C3F7827B93D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +297,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68833C289ED4A234BDD11854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYVideoPlayer/Pods-LYVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E6C06D92C86C37D11528B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3711424039E3C3F7827B93D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYVideoPlayer/Pods-LYVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAE4524F1D2CA28D0055AE8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,6 +353,7 @@
 				BAE452591D2CA28D0055AE8D /* ViewController.swift in Sources */,
 				BAE452871D2CB4450055AE8D /* LYVideoPlayView.swift in Sources */,
 				BAE452851D2CA5C80055AE8D /* LYVideoPlayerControl.swift in Sources */,
+				BAF13DCB1D2DFEDF009C4F85 /* OverlayView.swift in Sources */,
 				BAE452571D2CA28D0055AE8D /* AppDelegate.swift in Sources */,
 				BAD4CEBA1D2D093E009F07BF /* TransPortProtocol.swift in Sources */,
 			);
@@ -412,23 +495,29 @@
 		};
 		BAE4527C1D2CA28E0055AE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74CE242F3577335064CD1606 /* Pods-LYVideoPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d40ec336-f889-4e25-a3fd-817978e2c736";
 			};
 			name = Debug;
 		};
 		BAE4527D1D2CA28E0055AE8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6E0BEF28C9B003454062F7 /* Pods-LYVideoPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LYVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liyan.LYVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d40ec336-f889-4e25-a3fd-817978e2c736";
 			};
 			name = Release;
 		};
